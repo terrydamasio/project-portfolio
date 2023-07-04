@@ -121,6 +121,11 @@ header a {
     justify-content: center;
 }
 
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(40, 58, 90, 0.9);
+}
+
 .hero-1 a {
     font-size: 20px;
     width: 40px;
@@ -202,7 +207,20 @@ header .socials a:hover {
 
 main nav {
     height: 100px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background: #000;
 }
+
+main nav:hover {
+    background: #000;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
 
 main nav :where(.container, ul) {
     display: flex;

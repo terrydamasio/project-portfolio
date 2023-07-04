@@ -133,7 +133,7 @@ header a {
     margin-top: 5px;
     display: inline-flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 header .logo a {
@@ -207,20 +207,7 @@ header .socials a:hover {
 
 main nav {
     height: 100px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 1;
-    background: #000;
 }
-
-main nav:hover {
-    background: #000;
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-
 
 main nav :where(.container, ul) {
     display: flex;

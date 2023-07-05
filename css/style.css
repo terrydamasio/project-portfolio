@@ -314,14 +314,14 @@ main nav .menu ul {
 
 .hero .wrapper .image {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -15px;
+    bottom: 25%;
     z-index: -1;
     transform: translateX(50%);
 }
 
 .hero .wrapper .image img {
-    max-width: 680px;
+    width: 610px;
 }
 
 .hero .text {
@@ -373,8 +373,7 @@ main nav .menu ul {
 }
 
 .hero .text-bottom ul {
-    padding: 0 0 30px 30px;
-
+    padding: 0 0 130px 30px;
 }
 
 .hero .text-bottom ul li {
@@ -414,7 +413,7 @@ main nav .menu ul {
 }
 
 main > div:not(.hero) {
-    padding: 100px 0;
+    padding: 80px 0;
     overflow: hidden;
 }
 
@@ -919,13 +918,46 @@ footer {
     transition-delay: .9s;
 }
 
-
-/* Small devices (landscape phones, 576px and up)*/
-@media screen and (max-width: 767.98px) { 
+@media screen and (max-width: 630.98px) { 
     .container {
         padding: 0 34px;
     }
     
+    .hero .wrapper .image {
+        position: absolute;
+        right: 50%;
+        bottom: 22%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image {
+        width: 310px;
+    }
+
+    .hero .text-bottom ul {
+        padding: 0 0 30px 30px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 630.98px) and (max-width: 767.98px) { 
+    .container {
+        padding: 0 34px;
+    }
+    
+    .hero .wrapper .image {
+        position: absolute;
+        right: 25%;
+        bottom: 55%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image img {
+        width: 350px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -977,6 +1009,49 @@ footer {
         grid-auto-flow: row;
         grid-auto-columns: inherit;
         overflow-x: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 778.98px) {
+    .hero .wrapper .image {
+        position: absolute;
+        right: 20%;
+        bottom: 55%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image img {
+        width: 350px;
+    }
+}
+
+@media (min-width: 779px) and (max-width: 942.98px) {
+    .hero .wrapper .image {
+        position: absolute;
+        right: 25%;
+        bottom: 45%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image img {
+        width: 430px;
+    }
+}
+
+@media (min-width: 943px) and (max-width: 1199.98px) {
+    
+    .hero .wrapper .image {
+        position: absolute;
+        right: 25%;
+        bottom: 34%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image img {
+        width: 550px;
     }
 }
 

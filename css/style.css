@@ -920,7 +920,7 @@ footer {
 
 @media screen and (max-width: 630.98px) { 
     .container {
-        padding: 0 34px;
+        padding: 34px 34px;
     }
     
     .hero .wrapper .image {
@@ -932,7 +932,7 @@ footer {
     }
     
     .hero .wrapper .image {
-        width: 310px;
+        width: 270px;
     }
 
     .hero .text-bottom ul {

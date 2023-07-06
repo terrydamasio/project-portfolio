@@ -1096,12 +1096,17 @@ footer {
     }
 
     .hero .text-bottom ul li a::before {
-        width: 0px;
-        height: 0px;
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: -22px;
+        width: 12px;
+        height: 12px;
+        background-color: var(--light-color);
+        border-radius: 50%;
+        transition: background-color .3s;
     }
-
     
-
     main > div:not(.hero) {
         padding: 60px 40px;
         overflow: hidden;

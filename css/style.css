@@ -960,6 +960,10 @@ footer {
         display: none;
     }
 
+    .hero .text-top p br {
+        display: none;
+    }
+
     .hero .hero-1.social.is-hover {
         text-align: center;
         margin-top: 15px;
@@ -1131,6 +1135,10 @@ footer {
     main > div:not(.hero) {
         padding: 60px 40px;
         overflow: hidden;
+    }
+
+    .hero .text-top p br {
+        display: none;
     }
 }
 

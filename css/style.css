@@ -322,6 +322,7 @@ main nav .menu ul {
 
 .hero .wrapper .image img {
     width: 610px;
+    transition: 1s;
 }
 
 .hero .text {
@@ -344,8 +345,12 @@ main nav .menu ul {
 }
 
 .hero .text-top h1 strong {
-    font-size: clamp(40px, 5.5vw, 2.5em);
+    font-size: clamp(40px, 4vw, 2em);
     font-weight: 800;
+}
+
+.hero .text-top h1 strong br {
+    display: none;      
 }
 
 .hero .text-top p,
@@ -933,6 +938,7 @@ footer {
     
     .hero .wrapper .image {
         width: 250px;
+        transition: 1s;
         position: relative;
         right: auto;
         bottom: auto;
@@ -1008,6 +1014,20 @@ footer {
         height: 0px;
     }
 }
+@media (min-width: 1200px) and (max-width: 1290px) {
+    .hero .wrapper .image {
+        position: absolute;
+        right: -50px;
+        bottom: 30%;
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    
+    .hero .wrapper .image img {
+        width: 560px;
+        transition: 1s;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 630.98px) and (max-width: 1199.98px) { 
@@ -1025,6 +1045,7 @@ footer {
     
     .hero .wrapper .image {
         width: 450px;
+        transition: 1s;
         position: relative;
         right: auto;
         bottom: auto;
@@ -1163,11 +1184,16 @@ footer {
         grid-auto-columns: inherit;
         overflow-x: unset;
     }
+    
+    .hero .wrapper .image img {
+        transition: 1s;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .hero .wrapper .image {
         transform: none;
+        transition: 1s;
     }
 
     .hero .text > * {

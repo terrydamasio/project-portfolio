@@ -1251,7 +1251,7 @@ footer {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1290px) {
+@media (min-width: 1200.01px) and (max-width: 1290px) {
     .hero .wrapper .image {
         position: absolute;
         right: -50px;

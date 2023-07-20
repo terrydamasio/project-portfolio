@@ -12,7 +12,7 @@
 
     $texto = '- ' . $nome . ' # ' . $email . ' # ' . $topico . ' # ' . $mensagem . PHP_EOL;
     
-    $arquivo = fopen('arquivo.hd', 'a');
+    $arquivo = fopen('contatos.hd', 'a');
 
     fwrite($arquivo, $texto);
 

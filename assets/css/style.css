@@ -203,7 +203,6 @@ header .socials a:hover {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    border: 2px solid black;
 }
 
 main nav {
@@ -217,9 +216,9 @@ main nav :where(.container, ul) {
     height: inherit;
 }
 
-main .fixo-topo {
+main nav .fixo-topo {
     position: -webkit-sticky;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: transparent;
     z-index: 1;
@@ -244,8 +243,6 @@ main nav .menu {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-right: 977px;
-    border: 1px solid red;
 }
 
 main nav .menu a:hover {

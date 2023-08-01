@@ -203,6 +203,7 @@ header .socials a:hover {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    border: 2px solid black;
 }
 
 main nav {
@@ -218,12 +219,11 @@ main nav :where(.container, ul) {
 
 main .fixo-topo {
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: transparent;
     z-index: 1;
     background: var(--white-color);
-    transition: 0.5s;
 }
 
 main .fixo-topo.ativo {
@@ -244,6 +244,8 @@ main nav .menu {
     display: flex;
     align-items: center;
     justify-content: start;
+    margin-right: 977px;
+    border: 1px solid red;
 }
 
 main nav .menu a:hover {

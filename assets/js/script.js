@@ -61,5 +61,5 @@ animation.forEach((el) => {
 
 window.addEventListener('scroll', function() {
     let animacao = document.querySelector('.fixo-topo');
-    animacao.classList.toggle('ativo', window.scrollY > 100)
+    animacao.classList.toggle('ativo', window.scrollY > 45)
 })

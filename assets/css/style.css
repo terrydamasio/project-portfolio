@@ -297,6 +297,13 @@ main nav .daynight input:checked ~ label .dark {
     display: block;
 }
 
+nav .daynight,
+nav #dmswitcher{
+    display: flex;
+    position: relative;
+    right: 30px;
+}
+
 main nav .menu {
     position: fixed;
     top: 0;
@@ -1084,7 +1091,7 @@ footer {
     .mobile-only {
         display: none;
     }
-
+    
     header, main nav .menu {
         transform: none;
     }
@@ -1117,6 +1124,7 @@ footer {
     .hero .wrapper .image img {
         transition: 1s;
     }
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -1229,8 +1237,10 @@ footer {
     main nav .menu {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
     }
+
+
 }
 
 @media screen and (min-width: 1200px) {

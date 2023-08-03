@@ -832,6 +832,19 @@ span {
     color: var(--grey-color);
 } 
 
+.portfolio ul .card-project .button-git {
+    position: relative;
+    display: flex;
+    left: 85%;
+    bottom: 87px;
+}
+
+.portfolio ul .card-project .button-git:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+    animation:  balanco 1s infinite;
+}
+
 /* ---------------
     7. Contact 
    --------------- */

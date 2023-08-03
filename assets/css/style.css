@@ -191,7 +191,7 @@ header .logo a {
     50% {box-shadow: 0 0 0 0 var(--primary-04-color);}
 }
 
-header .socials a:hover {
+header .socials a:hover{
     color: var(--white-color);
 }
 
@@ -206,7 +206,8 @@ header .socials a:hover {
 }
 
 main nav {
-    height: 100px;
+    height: 90px;
+    z-index: -1;
 }
 
 main nav :where(.container, ul) {
@@ -216,18 +217,20 @@ main nav :where(.container, ul) {
     height: inherit;
 }
 
-main nav .fixo-topo {
-    position: -webkit-sticky;
-    position: sticky;
+main .fixo-topo {
+    position: -webkit-fixed;
+    position: fixed;
     top: 0;
     background-color: transparent;
     z-index: 1;
-    background: var(--white-color);
+    background: transparent;
+    transition: 0.5s;
 }
 
 main .fixo-topo.ativo {
     height: 70px; 
     transition: 0.5s;
+    background: var(--white-color);
 }
 
 main nav .menu a {

@@ -937,11 +937,16 @@ span {
     8. Footer
    ------------ */
 footer {
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     padding-left: 32px;
 
+}
+
+footer a:hover{
+   color: var(--primary-color);
+   transition: 0.5s;
 }
 
 /* ------------------------

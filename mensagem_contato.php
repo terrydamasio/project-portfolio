@@ -1,22 +1,21 @@
 <?php 
 
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
+    $nome = addslashes($_POST['nome']);
+    $telefone = addslashes($_POST['telefone']);
+    $assunto = addslashes($_POST['assunto']);
+    $mensagem = addslashes($_POST['mensagem']);
 
-    //montagem do texto
-    $nome = str_replace('#', '-', $_POST['nome']);
-    $email = str_replace('#', '-', $_POST['email']);
-    $topico = str_replace('#', '-', $_POST['topico']);
-    $mensagem = str_replace('#', '-', $_POST['mensagem']);
-
-    $texto = '- ' . $nome . ' # ' . $email . ' # ' . $topico . ' # ' . $mensagem . PHP_EOL;
+    $destinatario = "terrydamasio.dev@gmail.com";
     
-    $arquivo = fopen('contatos.hd', 'a');
+    $corpo = "Nome: " . $nome . "\n" . "Telefone: " . $telefone . "\n" . "Assunto: " . $assunto . "\n" . "Mensagem: " . $mensagem;
 
-    fwrite($arquivo, $texto);
+    $cabecalho = "From: " . $nome . "\n" . "Reply-top: " . $destinatario . "\n" . "X=Mailer:PHP/" . phpversion();
 
-    fclose($arquivo);
-    
-    header('Location: index.html');
+    if(mail($destinatario, $assunto, $corpo, $cabecalho)) {
+        echo "Email enviado";
+    } else {
+        echo "Erro ao enviar email"; 
+    }
+
+
 ?>

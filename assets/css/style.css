@@ -845,6 +845,9 @@ span {
     animation:  balanco 1s infinite;
 }
 
+.button-git {
+    width: 35px;
+}
 /* ---------------
     7. Contact 
    --------------- */

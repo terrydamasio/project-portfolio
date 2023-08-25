@@ -12,7 +12,7 @@
     $cabeca = "From: teste@damasio.com" . "\n" . "Reply-top: " . $para . "\n" . "X=Mailer:PHP/" . phpversion();
 
     if(mail($para, $assunto, $corpo, $cabeca)) {
-        header('Location: index.html');
+        header('Location: index.php');
     } else {
         echo "Erro ao enviar email"; 
     }

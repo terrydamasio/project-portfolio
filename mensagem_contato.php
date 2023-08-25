@@ -1,21 +1,22 @@
 <?php 
 
-    $nome = addslashes($_POST['nome']);
-    $telefone = addslashes($_POST['telefone']);
-    $mensagem = addslashes($_POST['mensagem']);
+    echo '<pre>';
+    print_r($_POST);
+    echo '</pre>';
 
-    $para = "terrydamasio.dev@gmail.com";
-    $assunto = "Trabalho - Formulário Portfolio";
+    //montagem do texto
+    $nome = str_replace('#', '-', $_POST['nome']);
+    $email = str_replace('#', '-', $_POST['email']);
+    $topico = str_replace('#', '-', $_POST['topico']);
+    $mensagem = str_replace('#', '-', $_POST['mensagem']);
 
-    $corpo = "Nome: " . $nome . "\n" . "Telefone: " . $telefone . "\n" . "Mensagem: " . $mensagem;
+    $texto = '- ' . $nome . ' # ' . $email . ' # ' . $topico . ' # ' . $mensagem . PHP_EOL;
+    
+    $arquivo = fopen('contatos.hd', 'a');
 
-    $cabeca = "From: teste@damasio.com" . "\n" . "Reply-top: " . $para . "\n" . "X=Mailer:PHP/" . phpversion();
+    fwrite($arquivo, $texto);
 
-    if(mail($para, $assunto, $corpo, $cabeca)) {
-        header('Location: index.php');
-    } else {
-        echo "Erro ao enviar email"; 
-    }
-
-
+    fclose($arquivo);
+    
+    header('Location: index.html');
 ?>

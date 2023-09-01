@@ -7,10 +7,9 @@
     //montagem do texto
     $nome = str_replace('#', '-', $_POST['nome']);
     $email = str_replace('#', '-', $_POST['email']);
-    $topico = str_replace('#', '-', $_POST['topico']);
     $mensagem = str_replace('#', '-', $_POST['mensagem']);
 
-    $texto = '- ' . $nome . ' # ' . $email . ' # ' . $topico . ' # ' . $mensagem . PHP_EOL;
+    $texto = '- ' . $nome . ' # ' . $email . ' # ' . $mensagem . PHP_EOL;
     
     $arquivo = fopen('contatos.hd', 'a');
 
@@ -18,5 +17,5 @@
 
     fclose($arquivo);
     
-    header('Location: index.html');
+    header('Location: index.php');
 ?>

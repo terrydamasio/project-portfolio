@@ -343,27 +343,16 @@ main nav .menu ul {
 
 .hero .wrapper .image {
     position: absolute;
-    right: -15px;
-    bottom: 25%;
+    right: 150px;
+    bottom: 40%;
     z-index: -1;
     transform: translateX(50%);
     animation: balanco 1s ease-in-out infinite;
 }
 
-@keyframes balanco {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
 
 .hero .wrapper .image img {
-    width: 610px;
+    width: 410px;
 }
 
 .hero .text {
@@ -1008,7 +997,7 @@ footer a:hover{
     }
     
     .hero .wrapper .image {
-        width: 250px;
+        width: 300px;
         transition: 1s;
         position: relative;
         right: auto;
@@ -1144,6 +1133,7 @@ footer a:hover{
     
     .hero .wrapper .image img {
         transition: 1s;
+        
     }
 
 }
@@ -1163,7 +1153,7 @@ footer a:hover{
     }
     
     .hero .wrapper .image {
-        width: 450px;
+        width: 430px;
         transition: 1s;
         position: relative;
         right: auto;
@@ -1282,14 +1272,14 @@ footer a:hover{
 @media (min-width: 1200.01px) and (max-width: 1290px) {
     .hero .wrapper .image {
         position: absolute;
-        right: -50px;
-        bottom: 30%;
+        right: 190px;
+        bottom: 40%;
         z-index: -1;
         transform: translateX(50%);
     }
     
     .hero .wrapper .image img {
-        width: 560px;
+        width: 390px;
         transition: 1s;
     }
 
